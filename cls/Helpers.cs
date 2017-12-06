@@ -70,7 +70,7 @@ namespace ProjectEuler.cls
             var divisors = new List<int>();
 
             var i = 1;
-            while (i < Math.Sqrt(value))
+            while (i <= Math.Sqrt(value))
             {
                 if (value % i == 0)
                 {
