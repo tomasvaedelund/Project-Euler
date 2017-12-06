@@ -26,7 +26,7 @@ namespace ProjectEuler.cls
             
             while (result > 1)
             {
-                prime = Helpers.getNextPrime(prime);
+                prime = Helpers.GetNextPrime(prime);
 
                 if (result % prime == 0)
                 {

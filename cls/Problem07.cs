@@ -26,7 +26,7 @@ namespace ProjectEuler.cls
             primes[0] = 2;
             for (int i = 1; i < max; i++)
             {
-                primes[i] = Helpers.getNextPrime(primes[i - 1]);
+                primes[i] = Helpers.GetNextPrime(primes[i - 1]);
             }
 
             return primes[max - 1];

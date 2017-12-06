@@ -7,11 +7,11 @@ namespace ProjectEuler.cls
 {
     public static class Helpers
     {
-        public static int getNextPrime(int start)
+        public static int GetNextPrime(int start)
         {
             for (int i = start + 1; i < int.MaxValue; i++)
             {
-                if (i.isPrime())
+                if (i.IsPrime())
                 {
                     return i;
                 }
@@ -20,7 +20,7 @@ namespace ProjectEuler.cls
             throw new Exception("Didn't find a next prime");
         }
 
-        public static bool isPrime(this int candidate)
+        public static bool IsPrime(this int candidate)
         {
             if (candidate <= 1)
             {
@@ -51,7 +51,7 @@ namespace ProjectEuler.cls
             return true;
         }
 
-        public static BigInteger getFactorial(int n)
+        public static BigInteger GetFactorial(int n)
         {
             var counter = 1;
             BigInteger result = 1;
@@ -65,7 +65,7 @@ namespace ProjectEuler.cls
             return result;
         }
 
-        public static List<int> getDivisors(int value)
+        public static List<int> GetDivisors(int value)
         {
             var divisors = new List<int>();
 
@@ -89,10 +89,10 @@ namespace ProjectEuler.cls
             return divisors.OrderBy(x => x).ToList();
         }
 
-        public static int getSumOfDivisors(int value)
+        public static int GetSumOfDivisors(int value)
         {
             var result = 0;
-            var divisors = getDivisors(value);
+            var divisors = GetDivisors(value);
 
             foreach (var divisor in divisors)
             {

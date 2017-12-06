@@ -23,8 +23,8 @@ namespace ProjectEuler.cls
             var result = 0;
             for (int i = 1; i < 10000; i++)
             {
-                var candidate = Helpers.getSumOfDivisors(i);
-                if (candidate > i && Helpers.getSumOfDivisors(candidate) == i)
+                var candidate = Helpers.GetSumOfDivisors(i);
+                if (candidate > i && Helpers.GetSumOfDivisors(candidate) == i)
                 {
                     result += i + candidate;
                 }

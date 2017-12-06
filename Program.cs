@@ -28,7 +28,8 @@ namespace ConsoleApplication
             // new Problem19();
             // new Problem20();
             // new Problem21();
-            new Problem22();
+            // new Problem22();
+            new Problem23();
         }
     }
 }

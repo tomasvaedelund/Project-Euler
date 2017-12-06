@@ -24,7 +24,7 @@ namespace ProjectEuler.cls
             var prime = 0;
             long result = 0;
 
-            while ((prime = Helpers.getNextPrime(prime)) < max)
+            while ((prime = Helpers.GetNextPrime(prime)) < max)
             {
                 result += prime;
             }

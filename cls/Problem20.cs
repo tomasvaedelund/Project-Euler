@@ -22,7 +22,7 @@ namespace ProjectEuler.cls
         private int getAnswer()
         {
             var start = 100;
-            var factorial = Helpers.getFactorial(start);
+            var factorial = Helpers.GetFactorial(start);
             var result = 0;
 
             while (factorial > 1)
